@@ -1,0 +1,1 @@
+{"data":[{"volid":"pbs:backup/vm/100/2026-11-08T22:00:03Z","content":"backup","format":"pbs-vm","size":4294967296,"ctime":1794175203,"vmid":100,"notes":"web1","protected":0},{"volid":"pbs:backup/vm/100/2026-11-09T22:00:02Z","content":"backup","format":"pbs-vm","size":4294967296,"ctime":1794261602,"vmid":100,"notes":"web1","protected":1}]}

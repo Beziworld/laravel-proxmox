@@ -1,0 +1,1 @@
+{"data":[{"storage":"local","type":"dir","content":"iso,vztmpl,backup","active":1,"enabled":1,"shared":0,"total":100861726720,"used":25215431680,"avail":70496157696,"used_fraction":0.25},{"storage":"pbs","type":"pbs","content":"backup","active":1,"enabled":1,"shared":1,"total":2199023255552,"used":549755813888,"avail":1649267441664,"used_fraction":0.25}]}

@@ -1,0 +1,7 @@
+{"data":[
+ {"id":"node/pve1","type":"node","node":"pve1","status":"online","cpu":0.0412,"maxcpu":16,"mem":17179869184,"maxmem":68719476736,"disk":12884901888,"maxdisk":107374182400,"uptime":864000,"level":""},
+ {"id":"qemu/100","type":"qemu","vmid":100,"node":"pve1","name":"web1","status":"running","cpu":0.12,"maxcpu":4,"mem":2147483648,"maxmem":4294967296,"disk":0,"maxdisk":34359738368,"uptime":3600,"template":0,"tags":"prod;web"},
+ {"id":"lxc/200","type":"lxc","vmid":200,"node":"pve2","name":"ct-db","status":"stopped","cpu":0,"maxcpu":2,"mem":0,"maxmem":1073741824,"disk":0,"maxdisk":8589934592,"uptime":0,"template":0},
+ {"id":"qemu/9000","type":"qemu","vmid":9000,"node":"pve2","name":"debian-12-template","status":"stopped","template":1,"maxcpu":2,"maxmem":2147483648,"maxdisk":10737418240},
+ {"id":"storage/pve1/local-lvm","type":"storage","node":"pve1","storage":"local-lvm","status":"available","plugintype":"lvmthin","content":"rootdir,images","shared":0,"disk":53687091200,"maxdisk":214748364800}
+]}

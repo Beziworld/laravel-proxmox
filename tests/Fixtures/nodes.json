@@ -1,0 +1,1 @@
+{"data":[{"node":"pve1","status":"online","cpu":0.0412,"maxcpu":16,"mem":17179869184,"maxmem":68719476736,"uptime":864000,"level":"c","ssl_fingerprint":"AA:BB"},{"node":"pve2","status":"offline"}]}

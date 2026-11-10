@@ -1,0 +1,1 @@
+{"data":{"upid":"UPID:pve1:000A1B2C:0123ABCD:6730A1B2:qmstart:100:automation@pve!laravel:","node":"pve1","pid":662316,"pstart":19114957,"starttime":1731240370,"type":"qmstart","id":"100","user":"automation@pve!laravel","status":"stopped","exitstatus":"start failed: QEMU exited with code 1"}}

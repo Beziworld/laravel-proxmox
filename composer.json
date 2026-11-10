@@ -1,0 +1,79 @@
+{
+    "name": "beziworld/laravel-proxmox",
+    "description": "Laravel client for the Proxmox VE API: nodes, QEMU VMs, LXC containers, snapshots, backups, storage, tasks with a UPID waiter, cluster resources and access, for many clusters.",
+    "keywords": ["laravel","proxmox","proxmox-ve","pve","virtualization","qemu","lxc","api-client"],
+    "homepage": "https://github.com/beziworld/laravel-proxmox",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kamil Ćwiertnia",
+            "email": "biuro@beziworld.eu",
+            "homepage": "https://beziworld.eu",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/beziworld/laravel-proxmox/issues",
+        "source": "https://github.com/beziworld/laravel-proxmox"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8",
+        "illuminate/cache": "^12.0|^13.0",
+        "illuminate/collections": "^12.0|^13.0",
+        "illuminate/console": "^12.0|^13.0",
+        "illuminate/contracts": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.7|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0",
+        "phpstan/phpstan-strict-rules": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beziworld\\Proxmox\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Beziworld\\Proxmox\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "test-coverage": "pest --coverage --min=80",
+        "analyse": "phpstan analyse --memory-limit=1G",
+        "format": "pint",
+        "lint": "pint --test",
+        "ci": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Beziworld\\Proxmox\\ProxmoxServiceProvider"
+            ],
+            "aliases": {
+                "Proxmox": "Beziworld\\Proxmox\\Facades\\Proxmox"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

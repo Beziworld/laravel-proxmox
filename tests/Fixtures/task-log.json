@@ -1,0 +1,1 @@
+{"data":[{"n":1,"t":"kvm: -drive file=/dev/pve/vm-100-disk-0: Could not open '/dev/pve/vm-100-disk-0': No such file or directory"},{"n":2,"t":"TASK ERROR: start failed: QEMU exited with code 1"}]}
